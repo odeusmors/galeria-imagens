@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria de Imagens com Filtros e Lightbox</title>
+    <title>Galeria de Imagens</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,8 +11,9 @@
         <nav>
             <h1>Galeria de Imagens</h1>
             <ul class="filter-buttons">
-                <li data-filter="all">Todos</li>
+                <li data-filter="all" class="active">Todos</li>
                 <li data-filter="nature">Natureza</li>
+                <li data-filter="landscape">Paisagens</li>
                 <li data-filter="city">Cidade</li>
                 <li data-filter="people">Pessoas</li>
             </ul>
@@ -22,27 +23,43 @@
     <main>
         <section class="gallery">
             <div class="gallery-item nature">
-                <img src="images/nature1.jpg" alt="Natureza"> <!--alterar imagens-->
+                <img src="imgs/nature.jpg" alt="Natureza">
+            </div>
+            <div class="gallery-item nature">
+                <img src="imgs/nature2.jpg" alt="Natureza">
+            </div>
+            <div class="gallery-item landscape">
+                <img src="imgs/paisage.jpg" alt="Paisagem">
+            </div>
+            <div class="gallery-item landscape">
+                <img src="imgs/paisage2.jpg" alt="Paisagem">
             </div>
             <div class="gallery-item city">
-                <img src="images/city1.jpg" alt="Cidade"> <!--alterar imagens-->
+                <img src="imgs/nightcity.jpg" alt="Cidade">
+            </div>
+            <div class="gallery-item city">
+                <img src="imgs/nightcity2.jpg" alt="Cidade">
             </div>
             <div class="gallery-item people">
-                <img src="images/people1.jpg" alt="Pessoas"> <!--alterar imagens-->
+                <img src="imgs/friends.jpg" alt="Pessoas">
             </div>
-            <!-- Adicione mais imagens conforme necessário -->
+            <div class="gallery-item people">
+                <img src="imgs/nightcity2.jpg" alt="Pessoas">
+            </div>
         </section>
     </main>
 
     <div class="lightbox">
         <span class="close-lightbox">&times;</span>
         <img class="lightbox-img" src="" alt="Imagem Ampliada">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
     </div>
 
     <footer>
-        <p>&copy; 2025 Galeria de Imagens. DEV Luck Noshi Todos os direitos reservados.</p>
+        <p>&copy; 2025 Galeria de Imagens. DEV Luck Noshi - Todos os direitos reservados.</p>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
